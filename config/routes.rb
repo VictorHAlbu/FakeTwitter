@@ -12,4 +12,8 @@ Rails.application.routes.draw do
     get 'followers', to: "profile#followers"
     resources :posts, only: [:create, :destroy]
   end
+
+  resources :users, only: :show
+  resources :comments, only: [:create, :destroy] 
+
 end
