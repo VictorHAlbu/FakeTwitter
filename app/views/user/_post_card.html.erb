@@ -13,12 +13,6 @@
 
     <div class="card-body">
       <p class="card-text"><%= post.body %></p>
-      <%= link_to nil, {class: "like-toggle", id: post.id, remote: true} do %>
-        <i style="font-size:18px;color:<%= post.liked_by_user?(current_user) ? "#80c0ff" : "#ffffff" %> " class="fa fa-thumbs-up"></i>
-     <% end %>
-      <span class="ml-2"><%= post.likes.count %></span>
-
-     
       <%= link_to nil, {class:"comments-toggle ml-4", remote: true} do %>
         <i style="font-size:18px;color:#ffffff" class="fa fa-comment"></i>
      <% end %>
