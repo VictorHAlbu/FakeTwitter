@@ -1,5 +1,4 @@
 class User::PostsController < UserController
-  skip_before_action :verify_authenticity_token, only: :like_toggle
 
   def create
     f_params = form_params.merge(user: current_user)
