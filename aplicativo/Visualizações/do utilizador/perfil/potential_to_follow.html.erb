@@ -1,4 +1,10 @@
 <div class="row">
+  <%= form_tag(user_potential_to_follow_path, method: :get) do %>
+    <%= text_field_tag 'search', nil, placeholder: 'Pesquise por Usuário', class: 'input' %>    
+    <div class="control">
+      <%= submit_tag "Pesquisar", class: 'button is-info' %>
+    </div>  
+  <% end %>
   <% @potential_to_follow.each do |user| %>
     <div class="col-lg-4">
       <div class="card">
