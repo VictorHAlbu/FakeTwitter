@@ -1,24 +1,44 @@
-# README
+# Fake Twitter
+De acordo com teste solicitado, a aplicação é similar ao Twitter, onde os usuários podem  cadastrar seu perfil e fazer upload de foto, criar posts, comentar posts de outros usuários cadastrados, seguir e deixar de seguir usuários.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Tecnologias
 
-Things you may want to cover:
+Para desenvolver o projeto foi usado as tecnologias: Ruby on Rails, JavaScript, Postgresql e Bootstrap
 
-* Ruby version
+### Pré-requisitos
 
-* System dependencies
+Para rodar o projeto na sua máquina, deve ter instalado o ruby '2.5.8' e o 'rails', '~> 6.0.3' e Postgres
 
-* Configuration
+```
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
+Postgresql 
+```
 
-* Database creation
+Na sua máquina execute os comandos:
+```
+bundle install
+yarn install
+```
 
-* Database initialization
+Obs:  
+ 
 
-* How to run the test suite
+Em seguida crie sua base de dados com comandos:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rails db:create
+rails db:migrate
+```
+Test:<br>
+para rodar os testes de acordo com model desejádo rode o comando<br>
+ex:
+```
+rspec spec/model/user_spec.rb
 
-* Deployment instructions
+```
 
-* ...
+Para subir o projeto local execute:
+```
+rails s
+```
+
