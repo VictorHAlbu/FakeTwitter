@@ -1,5 +1,5 @@
 # Fake Twitter
-De acordo com teste solicitado, a aplicação é similar ao Twitter, onde os usuários podem  cadastrar seu perfil e fazer upload de foto, criar posts, comentar posts de outros usuários cadastrados, seguir e deixar de seguir usuários.
+
 
 # Tecnologias
 
